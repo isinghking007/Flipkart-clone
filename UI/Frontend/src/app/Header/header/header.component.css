@@ -1,0 +1,209 @@
+/* CSS for the header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2874F0;
+    color: #fff;
+    padding: 10px;
+}
+
+
+/* Style for Extra Space */
+
+.extra-space {
+    height: 100%;
+    min-width: 125px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+
+/* Style for the logo */
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.flip-logo {
+    width: 75px;
+}
+
+.logo a {
+    color: white;
+    font-size: 11px;
+    font-style: italic;
+    margin-top: -1px;
+}
+
+.logo a span {
+    color: #ffe500;
+    font-weight: 500;
+    margin-right: 2px;
+}
+
+.plus {
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    outline: none;
+    width: 10px;
+}
+
+
+/* Style for the navigation menu */
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+
+/* Style for each menu item */
+
+.menu li {
+    margin-right: 20px;
+}
+
+
+/* Style for links in the menu */
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/* Style for the search bar */
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+
+/* Style for the search input */
+
+.search-input {
+    width: 400px;
+    border: none;
+    background-color: white;
+    color: #fff;
+    padding: 5px;
+    padding: 0 16px;
+    border-radius: 2px 0 0 2px;
+    border: 0;
+    outline: 0 none;
+    font-size: 14px;
+    height: 36px;
+}
+
+.search-bar button {
+    height: 36px;
+    width: 44px;
+    border: none;
+    background: white;
+    color: #2874F0;
+    cursor: pointer;
+    padding: 4px 12px 0 8px;
+}
+
+
+/* Login Button */
+
+.login {
+    min-width: 120px;
+    align-items: center;
+    color: white;
+    margin-left: 13px;
+    margin-top: 8px;
+}
+
+.login-button {
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+    line-height: 20px;
+    font-size: 16px;
+    letter-spacing: .1px;
+    font-weight: 500;
+    color: #fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.login-button-inside {
+    display: inline-block;
+    position: relative;
+}
+
+.button-login-a {
+    color: #2874f0;
+    font-weight: 500;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    height: 32px;
+    padding: 5px 40px;
+    border: 1px solid #dbdbdb;
+}
+
+
+/* Become a seller */
+
+.seller {
+    flex: 0 0 auto;
+    min-width: 110px;
+    margin: 5px 20px;
+}
+
+.seller a,
+.more a,
+.cart a {
+    text-decoration: none;
+    line-height: 20px;
+    font-size: 16px;
+    letter-spacing: .1px;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+}
+
+.seller a span,
+.more a span,
+.cart a span {
+    line-height: 20px;
+    font-size: 16px;
+    letter-spacing: .1px;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+/* More */
+
+.more {
+    flex: 0 0 auto;
+    min-width: 23px;
+    margin: 5px 20px;
+}
+
+
+/* Cart */
+
+.cart {
+    flex: 0 0 auto;
+    min-width: 70px;
+    margin: 5px 20px;
+}
