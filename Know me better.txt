@@ -1,0 +1,12 @@
+This Project is Basically Clone of Flipkart.com that is an ECommerce web application. 
+
+-> I've used Angular, Html, Css along with bootstrap to desing the Frontend (UI) of the application. 
+
+-> For API I've used DotNet Framework to deploy the web-api. 
+	->I'll be using JWT authentication along with some online resources to store up the images and videos used in this
+	 Project. 
+
+-> I'll be using SQL-SERVER to work on the database related queries. 
+
+-> In last I'll deploy this website to AWS with a dummy domain name and try to access globally. 
+
