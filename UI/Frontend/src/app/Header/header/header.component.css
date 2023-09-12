@@ -200,6 +200,71 @@ header {
 }
 
 
+/* More Dropdown CSS */
+
+
+/* Style for the dropdown container */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Style for the dropdown button */
+
+.dropbtn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Style for the dropdown content */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Style for dropdown links */
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Style for the dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+/* Show the dropdown content when hovering over the dropdown container */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Style for the dropdown button when hovering over the dropdown container */
+
+.dropdown:hover .dropbtn {
+    background-color: #2980b9;
+}
+
+
 /* Cart */
 
 .cart {
