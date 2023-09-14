@@ -39,7 +39,36 @@ export class BodyComponent implements OnInit {
     "Women's Top Wear":["All","Women's Casual Tshirt","Women's Formal Tshirts","Women's Formal Shirts","Women's Ethnic"],
     "Women's Bottom Wear":["All","Women's Casual Pant","Women's Formal Pant","Women's  Jenas","Women's Ethnic"],
   }
-  //DropDownMainContent=["Men's Top Wear","Men's Bottom Wear","Women Ethnic Wear","Women Western","Men's Footwear"];
+  
+  products = [
+    {
+      name: 'Product 1',
+      description: 'Description for Product 1',
+      imageUrl: 'assets/product1.jpg',
+    },
+    {
+      name: 'Product 2',
+      description: 'Description for Product 2',
+      imageUrl: 'assets/product2.jpg',
+    },
+    {
+      name: 'Product 3',
+      description: 'Description for Product 3',
+      imageUrl: 'assets/product3.jpg',
+    }, {
+      name: 'Product 1',
+      description: 'Description for Product 1',
+      imageUrl: 'assets/product1.jpg',
+    },
+    {
+      name: 'Product 2',
+      description: 'Description for Product 2',
+      imageUrl: 'assets/product2.jpg',
+    },
+    
+    // Add more products as needed
+  ];
+
   constructor(){}
   ngOnInit(): void {
     
