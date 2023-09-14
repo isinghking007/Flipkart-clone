@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './HomePage/home/home.component';
 import { HeaderComponent } from './Header/header/header.component';
 import { BodyComponent } from './HomePage/home/Body/body/body.component';
+import { TestComponent } from './Test/test/test.component';
+import { CarosuelComponent } from './Carosuel/carosuel/carosuel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    BodyComponent
+    BodyComponent,
+    TestComponent,
+    CarosuelComponent
   ],
   imports: [
     BrowserModule,

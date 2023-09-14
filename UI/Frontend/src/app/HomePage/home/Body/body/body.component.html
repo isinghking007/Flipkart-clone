@@ -32,10 +32,20 @@
                             <img src="../../../../../assets/Fashion.webp" alt="">
                         </div>
                     </div>
-                    <div class="bottom-text">
+                    <div class="bottom-text main-dropdown">
                         Fashion
+                        <div class="dropdown-content">
+                            <div class="sub-dropdown" *ngFor="let content of DropDownMainContent | keyvalue">
+                                <button class="sub-dropbtn">{{content.key}}</button>
+                                <div class="sub-dropdown-content">
+                                    <a href="#" *ngFor="let value of content.value">{{value}}</a>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </a>
+
             </div>
             <div class="items-1">
                 <a href="#">
@@ -110,5 +120,36 @@
                 </a>
             </div>
         </div>
+    </div>
+
+    <app-carosuel [images]="images" [autoslide]="true"></app-carosuel>
+    <br><br>
+</div>
+<div class="flex-container">
+    <div class="row">
+        <div class="col-2">
+            <div class="card card-style">
+
+                <div class="card-body">
+                    <h1 class="card-title side-title">Best of Electronics</h1>
+
+                    <a href="#" class="side-img"><button class="btn btn-primary" style="margin-left: 70px;">
+                        View All
+                    </button><img src="../../../../../assets/side-img.webp" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-8"></div>
+
+        <div class="col-2">
+            <div class="card card-style-left">
+
+                <div class="card-body" style="flex:0 !important">
+                    <a href="#" class="side-tile-left">
+                        <img class="side-title-left-img" src="../../../../../assets/side-flight.webp" alt=""></a>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>

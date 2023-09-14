@@ -1,0 +1,25 @@
+/* src/app/product-slider/product-slider.component.css */
+
+.slider-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    width: 200px;
+}
+
+.product-card {
+    flex: 0 0 auto;
+    max-width: 300px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Add more styling as needed */

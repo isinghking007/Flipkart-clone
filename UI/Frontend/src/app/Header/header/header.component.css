@@ -214,9 +214,9 @@ header {
 /* Style for the dropdown button */
 
 .dropbtn {
-    background-color: #3498db;
+    background: transparent;
     color: #fff;
-    padding: 10px 20px;
+    font-weight: 500;
     border: none;
     cursor: pointer;
 }
@@ -254,7 +254,18 @@ header {
 /* Show the dropdown content when hovering over the dropdown container */
 
 .dropdown:hover .dropdown-content {
+    background-color: #fff;
     display: block;
+    width: 320px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    margin-top: 15px;
+}
+
+.dropdown:hover .dropdown-content a {
+    border-top: 1px solid rgb(184, 150, 150);
+    ;
 }
 
 
@@ -262,6 +273,13 @@ header {
 
 .dropdown:hover .dropbtn {
     background-color: #2980b9;
+}
+
+.drpdwn-txt {
+    color: black !important;
+    padding-left: 10px;
+    font-size: 10px;
+    font-weight: 300;
 }
 
 
