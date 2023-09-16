@@ -10,16 +10,17 @@ import { FormGroup,FormBuilder,Validators } from '@angular/forms';
 export class RegisterComponent implements OnInit {
 
   constructor(private fb:FormBuilder){}
+  Register!:FormGroup ;
 
-  ngOnInit(){}
+  ngOnInit(){
 
-  Register=this.fb.group({
+  this.Register=this.fb.group({
     name:['',Validators.required],
     phone:['',Validators.required],
     email:['',Validators.required],
     password:['',Validators.required]
   })
-
+  }
   OnSubmit()
   {
     console.log(this.Register.value);
