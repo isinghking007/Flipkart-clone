@@ -1,0 +1,14 @@
+<div class="container">
+    <form class="form" [formGroup]="Register" (ngSubmit)="OnSubmit()" autocomplete="on">
+        <input type="text" autocomplete="off" placeholder="Enter your name" formControlName="name">
+        <input type="text" autocomplete="off" placeholder="Enter Mobile Number" formControlName="phone">
+        <input type="text" autocomplete="off" placeholder="Enter Email" formControlName="email">
+        <input type="password" autocomplete="off" placeholder="Enter Password" formControlName="password">
+        <button type="submit" class="btn-success" [disabled]="!Register.valid">Submit</button>
+
+    </form>
+    <div class="bottom">
+        <a href="#">New to Flipkart? Create an account</a>
+    </div>
+
+</div>
