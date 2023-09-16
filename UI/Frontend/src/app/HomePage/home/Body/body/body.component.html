@@ -139,7 +139,21 @@
                 </div>
             </div>
         </div>
-        <div class="col-8"></div>
+        <div class="col-8" style="position:relative">
+
+            <div class="slider-container">
+                <div class="product-card" *ngFor="let product of products">
+                    <div class="product-img">
+                        <img [src]="product.imageUrl" alt="{{ product.name }}" />
+                    </div>
+                    <div class="product-text">
+                        <h3 class="product-name">{{ product.name }}</h3>
+                        <p class="product-price">From <i class="fa-solid fa-indian-rupee-sign fa-xs" style="color: #287d1c;"></i> {{product.price}}</p>
+                        <p class="product-desc">{{ product.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="col-2">
             <div class="card card-style-left">
@@ -152,4 +166,38 @@
         </div>
 
     </div>
+    <div class="row">
+        <div class="col-2">
+            <div class="card card-style">
+
+                <div class="card-body">
+                    <h1 class="card-title side-title">Beauty, Food, Toys & more</h1>
+
+                    <a href="#" class="side-img"><button class="btn btn-primary" style="margin-left: 70px;">
+                        View All
+                    </button><img src="../../../../../assets/Child Store/baby-toys.webp" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-8" style="position:relative">
+
+            <div class="slider-container">
+                <div class="product-card" *ngFor="let product of Childproducts">
+                    <div class="product-img">
+                        <img [src]="product.imageUrl" alt="{{ product.name }}" />
+                    </div>
+                    <div class="product-text">
+                        <h3 class="product-name">{{ product.name }}</h3>
+                        <p class="product-price">From <i class="fa-solid fa-indian-rupee-sign fa-xs" style="color: #287d1c;"></i> {{product.price}}</p>
+                        <p class="product-desc">{{ product.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 </div>
+
+
+<br><br>
