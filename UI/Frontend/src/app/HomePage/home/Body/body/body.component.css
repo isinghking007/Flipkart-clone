@@ -198,8 +198,8 @@ h1 {
     height: 354px;
     border: none !important;
     width: 200px;
-    margin-left: -33px;
-    margin-top: 22px;
+    margin-left: -12px;
+    margin-top: 1px;
 }
 
 .side-title {
@@ -217,6 +217,7 @@ h1 {
 /*Slider CSS*/
 
 .slider-container {
+    overflow-y: hidden;
     display: flex;
     overflow-x: auto;
     gap: 20px;
@@ -224,8 +225,8 @@ h1 {
     width: 100%;
     position: absolute;
     left: 14%;
-    top: 8%;
-    height: 17rem;
+    top: 0%;
+    height: 19rem;
 }
 
 .product-card {
@@ -233,10 +234,31 @@ h1 {
     max-width: 300px;
     text-align: center;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: none;
+    max-height: fit-content;
 }
 
-.product-card img {
-    max-width: 100%;
-    height: auto;
+.product-text {
+    width: auto;
+    height: 100px;
+}
+
+.product-name {
+    font-size: 15px;
+    margin-top: -13px;
+}
+
+.product-img {
+    width: 200px;
+    height: 200px;
+}
+
+.product-price {
+    margin-top: -5px;
+    color: green;
+}
+
+.product-desc {
+    opacity: 0.6;
+    margin-top: -16px;
 }
