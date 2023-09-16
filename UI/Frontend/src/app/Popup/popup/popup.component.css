@@ -1,0 +1,42 @@
+.flex-container {
+    display: flex;
+    height: 450px;
+    width: 550px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.part-1 {
+    background-image: url('../../../assets/Login/login-page.png');
+    background-position: center 85%;
+    background-repeat: no-repeat;
+    background-color: #2874f0;
+    width: 200px;
+    position: relative;
+    height: 100%
+}
+
+.login-title {
+    position: absolute;
+    top: 8%;
+    left: 12%;
+    font-size: 37px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.login-desc {
+    position: absolute;
+    top: 22%;
+    left: 12%;
+    text-align: inherit;
+    font-size: 15px;
+    color: #fff;
+    opacity: 0.6;
+}
+
+.part-2 {
+    width: 350px;
+    height: 100%
+}
