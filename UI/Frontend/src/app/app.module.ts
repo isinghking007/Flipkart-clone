@@ -11,11 +11,7 @@ import { CarosuelComponent } from './Carosuel/carosuel/carosuel.component';
 import { FooterComponent } from './Footer/footer/footer.component';
 import { PopupComponent } from './Popup/popup/popup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-<<<<<<< HEAD
 
-=======
-import { ClickOutsideDirective } from './Directive/click-outside.directive';
->>>>>>> afc995af9cca641de21e51d7acda5cc5ed9076b9
 import {MatDialogModule} from '@angular/material/dialog';
 import { LoginComponent } from './Login & Signup/Login/login/login.component';
 import { RegisterComponent } from './Login & Signup/SignUp/register/register.component';
@@ -30,11 +26,7 @@ import {ReactiveFormsModule} from '@angular/forms'
     CarosuelComponent,
     FooterComponent,
     PopupComponent,
-<<<<<<< HEAD
    
-=======
-    ClickOutsideDirective,
->>>>>>> afc995af9cca641de21e51d7acda5cc5ed9076b9
     LoginComponent,
     RegisterComponent
   ],

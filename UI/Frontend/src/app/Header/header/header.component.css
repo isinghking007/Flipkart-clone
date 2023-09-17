@@ -160,12 +160,146 @@ header {
 }
 
 
+/*Login button Hover CSS start*/
+
+
+/* Style the dropdown container */
+
+.dropdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*  height: 100vh;  Adjust the height as needed */
+}
+
+
+/* Style the main dropdown container */
+
+.main-dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    z-index: 1;
+    left: 25%
+}
+
+
+/* Style the main dropdown button */
+
+.dropbtn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Style the main dropdown content (hidden by default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Style the sub-dropdown container */
+
+.sub-dropdown {
+    position: relative;
+}
+
+
+/* Style the sub-dropdown button */
+
+.sub-dropbtn {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    color: white;
+    /* padding: 10px 20px; */
+    border: none;
+    cursor: pointer;
+    width: 78%;
+    position: absolute;
+    right: -11%;
+}
+
+.sub-dropbtn a {
+    border-top: 1px solid gray;
+    color: #fff;
+    padding: 11px 14px;
+    text-decoration: none;
+    display: block;
+}
+
+.sub-dropbtn a span {
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+
+/* Style the sub-dropdown content (hidden by default) */
+
+.sub-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    left: 100%;
+    top: 0;
+}
+
+
+/* Style the sub-dropdown links */
+
+.sub-dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+
+
+/* Change color of sub-dropdown links on hover */
+
+.sub-dropdown-content a:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+
+/* Show the main dropdown content when the button is hovered over */
+
+.main-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Show the sub-dropdown content when the button is hovered over */
+
+.sub-dropdown:hover .sub-dropdown-content {
+    display: block;
+    position: absolute;
+    left: 10%
+}
+
+
+/*Login button Hover CSS end*/
+
+
 /* Become a seller */
 
 .seller {
     flex: 0 0 auto;
     min-width: 110px;
-    margin: 5px 20px;
+    margin: 8px 20px;
 }
 
 .seller a,
@@ -196,7 +330,7 @@ header {
 .more {
     flex: 0 0 auto;
     min-width: 23px;
-    margin: 5px 20px;
+    /* margin: 5px 20px; */
 }
 
 
@@ -208,6 +342,7 @@ header {
 .dropdown {
     position: relative;
     display: inline-block;
+    z-index: 3;
 }
 
 
@@ -253,9 +388,21 @@ header {
 
 /* Show the dropdown content when hovering over the dropdown container */
 
+.dropdown:hover.dropdown-contentOther {
+    width: 200px !important;
+    background-color: #fff;
+    display: block;
+    transition: all;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    margin-top: 15px;
+}
+
 .dropdown:hover .dropdown-content {
     background-color: #fff;
     display: block;
+    transition: all;
     width: 320px;
     left: 50%;
     transform: translateX(-50%);
@@ -288,5 +435,5 @@ header {
 .cart {
     flex: 0 0 auto;
     min-width: 70px;
-    margin: 5px 20px;
+    margin: 10px 20px;
 }
