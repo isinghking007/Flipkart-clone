@@ -28,7 +28,7 @@ startIndex=0;
     {
       this.displayIndex--;
       this.imageArrayToDisplay=this.SideImagesIcons.slice(this.prevIndex,this.displayIndex)
-     
+     this.startIndex--;
     }
    this.currentIndex=this.displayIndex;
    console.log("current index = "+this.currentIndex+"\nDisplay Index "+this.displayIndex+"\nStart Index"+this.startIndex+"\nPrev Index"+this.prevIndex);
@@ -49,6 +49,8 @@ startIndex=0;
     else if(this.currentIndex<=this.SideImagesIcons.length)
     {
       this.currentIndex=this.SideImagesIcons.length;
+      this.displayIndex=this.currentIndex;
+      this.startIndex=(this.SideImagesIcons.length-this.displaySize);
     }
     console.log("current index = "+this.currentIndex+"\nDisplay Index "+this.displayIndex+"\nStart Index"+this.startIndex);
   }
