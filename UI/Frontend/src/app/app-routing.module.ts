@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { TestComponent } from './Test/test/test.component';
 import { HomeComponent } from './HomePage/home/home.component';
 import { CarosuelComponent } from './Carosuel/carosuel/carosuel.component';
+import { PageComponent } from './Product/ProductPage/page/page.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,9 @@ const routes: Routes = [
   },
   {
     path:'carosuel',component:CarosuelComponent
+  },
+  {
+    path:'page',component:PageComponent
   }
 ];
 

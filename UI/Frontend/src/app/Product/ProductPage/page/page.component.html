@@ -6,10 +6,10 @@
                     <div class="side">
                         <div class="slide-box">
                             <ul>
-                                <li *ngFor="let prod of imageArrayToDisplay; let i=index">
+                                <li *ngFor="let prod of SideImagesIcons">
                                     <div class="inside">
                                         <div class="inside-li">
-                                            <img [src]="prod" alt="" [ngClass]="{'active':selectedIndex ===i}"> {{i}}
+                                            <img [src]="prod" alt="">
                                         </div>
                                     </div>
                                 </li>
@@ -21,8 +21,6 @@
                             <li></li>
                             <li></li> -->
                             </ul>
-                            <button class="btn-primary" (click)="prevClick()">Prev</button>
-                            <button class="btn-success" (click)="nextClick()">Next</button>
                         </div>
                     </div>
                 </div>

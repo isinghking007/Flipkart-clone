@@ -15,7 +15,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
 import { LoginComponent } from './Login & Signup/Login/login/login.component';
 import { RegisterComponent } from './Login & Signup/SignUp/register/register.component';
-import {ReactiveFormsModule} from '@angular/forms'
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { PageComponent } from './Product/ProductPage/page/page.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,14 +29,16 @@ import {ReactiveFormsModule} from '@angular/forms'
     PopupComponent,
    
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    PageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
