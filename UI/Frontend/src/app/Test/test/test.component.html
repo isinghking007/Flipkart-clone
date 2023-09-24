@@ -1,6 +1,6 @@
 <div class="flex-container">
     <div class="row">
-        <div class="col-4">
+        <div class="col-6">
             <div class="container">
                 <div class="box">
                     <div class="side">
@@ -13,22 +13,31 @@
                                         </div>
                                     </div>
                                 </li>
-                                <!-- <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li> -->
                             </ul>
-                            <button class="btn-primary" (click)="prevClick()">Prev</button>
-                            <button class="btn-success" (click)="nextClick()">Next</button>
+                            <button #prev class="btn-primary btn-prev" (click)="prevClick()">Prev</button>
+                            <button #next class="btn-success btn-next" (click)="nextClick()">Next</button>
+                        </div>
+                    </div>
+                    <div class="enlarge-box">
+                        <div class="image-box">
+                            <ul>
+                                <li>
+                                    <div class="inside-img-box">
+                                        <div class="inside-li">
+                                            <img src="../../../assets/Product/p1.webp" alt="">
+                                        </div>
+                                    </div>
+
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-8"></div>
+        <div class="col-6">
+            <p #hello>Hello world</p>
+        </div>
     </div>
 
 </div>
