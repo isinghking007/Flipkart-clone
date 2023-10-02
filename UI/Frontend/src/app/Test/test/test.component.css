@@ -1,11 +1,13 @@
 .flex-container {
     display: flex;
+    margin-top: 25px;
     /* align-items: center; */
     flex-direction: column;
 }
 
 .container {
     align-content: center;
+    position: fixed;
 }
 
 .box {
@@ -16,7 +18,7 @@
     width: 108px;
     height: 400px;
     border: 1px solid gray;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 .side::-webkit-scrollbar {
@@ -24,6 +26,7 @@
 }
 
 .slide-box {
+    right: 34px;
     position: relative;
     width: 100%;
     height: 500px;
@@ -61,7 +64,7 @@
     max-width: 100%;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 48%;
     transform: translateX(-50%) translateY(-50%);
 }
 
@@ -80,10 +83,23 @@
     left: 37%;
 }
 
+.bigger-box {
+    right: 36px;
+    width: 492px;
+    position: relative;
+}
+
 .enlarge-box {
-    width: 400px;
+    /* width: 400px; */
     height: 400px;
     border: 1px solid black;
+}
+
+.image-box {
+    height: 100%;
+    width: 480px;
+    position: relative;
+    right: 23px;
 }
 
 .inside-img-box {
@@ -97,4 +113,430 @@
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+}
+
+
+/* CSS for Item Desc */
+
+.header div h1 {
+    color: #212121;
+    font-size: 18px;
+    font-weight: 400;
+    display: contents;
+}
+
+.header-span {
+    padding: 0;
+    line-height: 1.4;
+    font-size: inherit;
+    font-weight: inherit;
+    display: inline-block;
+}
+
+.rating {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.rating-inside {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.rating-inside span {
+    position: relative;
+}
+
+.rating-inside span div {
+    line-height: normal;
+    display: inline-block;
+    color: #fff;
+    padding: 2px 4px 2px 6px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 12px;
+    vertical-align: middle;
+    background-color: #388e3c;
+}
+
+.rating-inside span div i {
+    margin: 2px 0 0 2px;
+    height: 10px;
+}
+
+.review {
+    padding-left: 8px;
+    font-weight: 500;
+    color: #878787;
+}
+
+.and {
+    color: #878787;
+}
+
+.rating span img {
+    height: 18px;
+    margin-left: 10px;
+}
+
+.Extra-offer {
+    font-weight: 500;
+    color: green;
+}
+
+.price {
+    margin-top: 7px;
+}
+
+.price div h1 span {
+    font-size: 25px;
+}
+
+.price div h1 i {
+    font-size: 22px;
+}
+
+.old-price {
+    font-size: 16px;
+    text-decoration: line-through;
+    margin-left: 12px;
+    vertical-align: middle;
+    color: #878787;
+}
+
+.off {
+    color: green;
+    font-weight: 500;
+}
+
+
+/*CSS For Available Offers */
+
+.bank-offer {
+    display: block;
+}
+
+.bank-offer-header {
+    margin-top: 8px;
+}
+
+.boh-in {
+    font-size: 16px;
+    font-weight: 500;
+    color: #212121;
+}
+
+.boh1 {
+    line-height: 1.43;
+    color: #212121;
+    font-size: 14px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.boh3-span {
+    margin-top: 12px;
+    display: flex;
+}
+
+.boh3 span img {
+    margin-right: 10px;
+    height: 18px;
+    width: 18px;
+}
+
+.boh3-span li {
+    list-style: none;
+    margin-top: -2px;
+    width: 94%;
+}
+
+.boh3-span li span {
+    color: #212121;
+    font-weight: 500;
+    padding-right: 4px;
+}
+
+
+/*CSS For Brand */
+
+.brand-color {
+    display: flex;
+}
+
+.brand {
+    font-size: 14px;
+    margin-top: 24px;
+    display: inline-block;
+}
+
+.brand div {
+    float: left;
+    width: 110px;
+}
+
+.brand div div {
+    width: 76px;
+    height: 32px;
+    border: 1px solid #f0f0f0;
+    position: relative;
+}
+
+.brand div div img {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 4px;
+}
+
+.warranty {
+    position: relative;
+    margin-top: 24px;
+    color: #212121;
+}
+
+.warranty div {
+    position: relative;
+    display: inline;
+    line-height: 2;
+}
+
+
+/*CSS FOR COlOR, RAM , STORAGE */
+
+.crs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.crs-in {
+    text-align: center;
+}
+
+.crs-in div {
+    position: relative;
+}
+
+.clr,
+.storage {
+    margin-top: 16px;
+    /* display: flex; */
+}
+
+.crs-in-f {
+    display: flex;
+    margin-top: 25px;
+}
+
+.clr span,
+.storage span {
+    font-size: 14px;
+    margin-top: 2px;
+    font-weight: 500;
+    color: #878787;
+    width: 110px;
+    min-width: 110px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.p-icon {
+    padding: 0;
+    margin: 0;
+}
+
+.p-icon ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.p-icon ul li {
+    display: inline-flex;
+    position: relative;
+    margin: 0 12px 4px 0;
+}
+
+.p-icon ul li a {
+    border: 2px solid #2874f0 !important;
+    color: #2874f0;
+    box-shadow: none;
+}
+
+.p-icon ul li a div {
+    height: 52px;
+    width: 52px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.p-icon ul li a div img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+/* Storage CSS */
+
+.storage- {
+    width: 44%;
+}
+
+.storage-in {
+    margin-top: 24px;
+    display: flex;
+    position: relative;
+}
+
+.storage-in div {
+    width: 100%;
+}
+
+.storage-in div ul {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    /* max-width: 100%; 
+    width: 110px;*/
+    top: 14px;
+    left: 42px;
+}
+
+.storage-in div ul li {
+    display: inline-flex;
+    position: relative;
+    margin: 0 12px 4px 0;
+}
+
+.storage-in div ul li a:active {
+    border: 2px solid #2874F0 !important;
+    color: #2874f0 !important;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.storage-in div ul li a {
+    border: 2px solid #999 !important;
+    color: #25272b !important;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.ram div ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.ram div ul li {
+    margin-left: 10px;
+    border: 2px solid darkgray;
+    /* color: gray; */
+    /* text-decoration: none; */
+    margin-top: 14px;
+    padding: 6px;
+}
+
+
+/*CSS For PinCode/Delivery**/
+
+.delivery {
+    display: flex;
+}
+
+.delivery .dev-name {
+    top: 45px;
+    position: relative;
+    left: 16px;
+}
+
+.delivery .dev-name span {
+    font-size: 14px;
+    margin-top: 2px;
+    font-weight: 500;
+    color: #878787;
+    width: 110px;
+    min-width: 110px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.del-input {
+    margin-top: 45px;
+    position: relative;
+    left: 47px;
+}
+
+.del-input input {
+    border-bottom: 2px solid #2874F0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 13px;
+    vertical-align: middle;
+    /* text-align: center; */
+    width: 205px;
+    padding-left: 15px;
+}
+
+.del-input i {
+    position: absolute;
+    margin-top: 5px;
+}
+
+.del-input span {
+    position: absolute;
+    right: 2px;
+    font-weight: 500;
+    color: #2874F0;
+}
+
+
+/*CSS HighLights */
+
+.HES {
+    display: flex;
+    margin-top: 60px;
+    position: relative;
+    right: 21px;
+}
+
+.Highlights,
+.Easy,
+.Seller {
+    display: flex;
+}
+
+.high-name {
+    padding-left: 16px;
+    width: 108px;
+}
+
+.high-name span {
+    font-size: 14px;
+    margin-top: 2px;
+    font-weight: 500;
+    color: #878787;
+    width: 110px;
+    min-width: 110px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.high-details li {
+    color: #212121;
+    padding: 0 0 8px 16px;
+    position: relative;
+    width: 188px;
 }

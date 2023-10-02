@@ -16,7 +16,8 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { LoginComponent } from './Login & Signup/Login/login/login.component';
 import { RegisterComponent } from './Login & Signup/SignUp/register/register.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { PageComponent } from './Product/ProductPage/page/page.component'
+import { PageComponent } from './Product/ProductPage/page/page.component';
+import { Test2Component } from './Test/test/test2/test2.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +31,8 @@ import { PageComponent } from './Product/ProductPage/page/page.component'
    
     LoginComponent,
     RegisterComponent,
-    PageComponent
+    PageComponent,
+    Test2Component
   ],
   imports: [
     BrowserModule,

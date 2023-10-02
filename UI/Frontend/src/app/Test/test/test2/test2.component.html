@@ -1,0 +1,26 @@
+<div style="text-align:center">
+    <h2>Tabbed Image Gallery</h2>
+    <p>Click on the images below:</p>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+    <div class="column">
+        <img src="../../../../assets/Product/p2.webp" alt="Nature" style="width:100%" (click)="myFunction()">
+    </div>
+    <div class="column">
+        <img src="../../../../assets/Product/p1.webp" alt="Snow" style="width:100%" (click)="myFunction()">
+    </div>
+    <div class="column">
+        <img src="../../../../assets/Product/p3.webp" alt="Mountains" style="width:100%" (click)="myFunction()">
+    </div>
+    <div class="column">
+        <img src="../../../../assets/Product/p4.webp" alt="Lights" style="width:100%" (click)="myFunction()">
+    </div>
+</div>
+
+<div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+</div>

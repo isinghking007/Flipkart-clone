@@ -1,5 +1,7 @@
 import { Component, ElementRef, HostListener, OnInit, Output, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+
+
 import { PopupComponent } from 'src/app/Popup/popup/popup.component';
 
 @Component({
@@ -13,13 +15,18 @@ export class TestComponent implements OnInit {
   @ViewChild('next',{static:false}) Next!:ElementRef;
   @ViewChild('prev',{static:false}) Prev!:ElementRef;
 
-  SideImagesIcons=['../../../../assets/Product/sp1.webp','../../../../assets/Product/sp2.webp','../../../../assets/Product/sp3.webp',
-  '../../../../assets/Product/sp4.webp','../../../../assets/Product/sp5.webp','../../../../assets/Product/sp6.webp','../../../../assets/Product/sp7.webp'
-,'../../../../assets/Product/sp8.webp','../../../../assets/Product/sp9.webp']
+  SideImagesIcons=['../../../../assets/Product/p1.webp','../../../../assets/Product/p2.webp','../../../../assets/Product/p3.webp',
+  '../../../../assets/Product/p4.webp','../../../../assets/Product/p5.webp','../../../../assets/Product/p6.webp','../../../../assets/Product/p7.webp'
+,'../../../../assets/Product/p8.webp']
 
 SideImages=['../../../assets/Product/p1.webp','../../../assets/Product/p2.webp','../../../assets/Product/p3.webp','../../../assets/Product/p4.webp'
 ,'../../../assets/Product/p5.webp','../../../assets/Product/p6.webp','../../../assets/Product/p7.webp','../../../assets/Product/p8.webp','../../../assets/Product/p9.webp']
-
+imageSrc="";
+ExpandImages=[
+  {
+    img:this.imageSrc
+  }
+]
 
 imageArrayToDisplay:string[]=[];
 displaySize=5;
@@ -72,6 +79,13 @@ ngOnInit(): void {
     console.log("current index = "+this.currentIndex+"\nDisplay Index "+this.displayIndex+"\nStart Index"+this.startIndex);
   }
  
+  mouseOverEvent(event:MouseEvent,img:any,i:number)
+  {
+  //  console.log(event);
+   this.imageSrc=img;
+   console.log(this.imageSrc+"\n"+img);
+    //console.log(i);
+  }
   constructor(){}
 
 }
