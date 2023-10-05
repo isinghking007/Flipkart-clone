@@ -2,6 +2,7 @@ import { Component, ElementRef, HostListener, OnInit, Output, ViewChild } from '
 import { MatDialog } from '@angular/material/dialog';
 
 
+
 import { PopupComponent } from 'src/app/Popup/popup/popup.component';
 
 @Component({
@@ -87,5 +88,10 @@ ngOnInit(): void {
     //console.log(i);
   }
   constructor(){}
+  
+  changeEvent(event:any)
+  {
+    console.log(event.target.value);
+  }
 
 }
