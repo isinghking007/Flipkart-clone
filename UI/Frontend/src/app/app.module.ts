@@ -17,7 +17,8 @@ import { LoginComponent } from './Login & Signup/Login/login/login.component';
 import { RegisterComponent } from './Login & Signup/SignUp/register/register.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { PageComponent } from './Product/ProductPage/page/page.component';
-import { Test2Component } from './Test/test/test2/test2.component'
+import { Test2Component } from './Test/test/test2/test2.component';
+import {MatExpansionModule} from '@angular/material/expansion';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +41,8 @@ import { Test2Component } from './Test/test/test2/test2.component'
     BrowserAnimationsModule,
     ReactiveFormsModule,
     MatDialogModule,
-    FormsModule
+    FormsModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
